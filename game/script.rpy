@@ -15,7 +15,7 @@ label start:
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
-
+    play music 'audio1.mp3' loop volume 0.5
     scene background
 
     # This shows a character sprite. A placeholder is used, but you can
@@ -133,9 +133,12 @@ label start:
    
 
 label YES:
+    
     "..."
     show scene 28
+    play sound "wow.mp3" volume 2.0
     'GODD DAMNnnn..'
+    return
     
 label no:
     show scene 29
